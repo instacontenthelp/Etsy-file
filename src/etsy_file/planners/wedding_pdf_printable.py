@@ -79,7 +79,7 @@ class PrintablePDF:
         self.W, self.H = pagesize
         self.c = Canvas(str(path), pagesize=pagesize)
         self.c.setTitle("Bold & Balanced Wedding Bible — Printable Planner")
-        self.c.setAuthor("The Planners Collective")
+        self.c.setAuthor("Marigold Bride")
         self._pages = 0
         self._page_num = 0   # running page number for footer
 
@@ -119,7 +119,7 @@ class PrintablePDF:
         fy = self.Y0 - 16
         self.c.setFont("Helvetica", 7)
         self.c.setFillColor(C["border"])
-        self.c.drawString(self.X0, fy, "Bold & Balanced Wedding Bible  ·  The Planners Collective")
+        self.c.drawString(self.X0, fy, "Bold & Balanced Wedding Bible  ·  Marigold Bride")
         pg_str = str(self._page_num)
         self.c.drawRightString(self.X1, fy, pg_str)
         # thin bottom rule
@@ -197,7 +197,7 @@ class PrintablePDF:
         # sub-line
         self.c.setFont("Helvetica", 9)
         self.c.setFillColor(C["accent2"])
-        sub = "Bold & Balanced Wedding Bible  ·  The Planners Collective"
+        sub = "Bold & Balanced Wedding Bible  ·  Marigold Bride"
         sw = self.c.stringWidth(sub, "Helvetica", 9)
         self.c.drawString((self.W - sw) / 2, self.H * 0.44, sub)
 
@@ -371,7 +371,7 @@ class PrintablePDF:
             "We wish you a beautiful, stress-free wedding planning journey.",
             "",
             "With love,",
-            "The Planners Collective",
+            "Marigold Bride",
         ]
         self.c.setFont("Helvetica", 8.5)
         self.c.setFillColor(C["dark"])

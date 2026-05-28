@@ -411,7 +411,7 @@ class WeddingPDF:
 
         # Footer
         self._text(cx, pad + 32,
-                   "The Planners Collective  ✦  theplannerscollective.com",
+                   "Marigold Bride  ✦  marigoldbride.com",
                    size=7.5, color=C["rose_gold"], align="center")
         self._text(cx, pad + 18,
                    "Use the tabs on the right to navigate your planner",

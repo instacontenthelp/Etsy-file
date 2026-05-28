@@ -85,7 +85,7 @@ def page_header(c: Canvas, section_num: str, section_title: str) -> float:
 def page_footer(c: Canvas, page_num: int) -> None:
     c.setFont("Helvetica", 7)
     c.setFillColor(C["line"])
-    c.drawString(X0, Y0 - 14, "Bold & Balanced Wedding Bible  ·  Bonus Toolkit  ·  The Planners Collective")
+    c.drawString(X0, Y0 - 14, "Bold & Balanced Wedding Bible  ·  Bonus Toolkit  ·  Marigold Bride")
     c.drawRightString(X1, Y0 - 14, str(page_num))
     c.setStrokeColor(C["line"])
     c.setLineWidth(0.4)
@@ -999,7 +999,7 @@ def main() -> None:
     print("Building Bonus Toolkit PDF …")
     c = Canvas(str(path), pagesize=letter)
     c.setTitle("Bold & Balanced Wedding Bible — Bonus Toolkit")
-    c.setAuthor("The Planners Collective")
+    c.setAuthor("Marigold Bride")
 
     global _page_count
     _page_count = 0

@@ -72,7 +72,7 @@ def page_footer(c: Canvas) -> None:
     c.setFont("Helvetica", 7)
     c.setFillColor(C["line"])
     c.drawString(X0, Y0 - 14,
-        "Bold & Balanced Wedding Bible  ·  The Planners Collective  ·  info@theplannerscollective.com")
+        "Bold & Balanced Wedding Bible  ·  Marigold Bride  ·  hello@marigoldbride.com")
     c.setStrokeColor(C["line"])
     c.setLineWidth(0.3)
     c.line(X0, Y0 - 2, X1, Y0 - 2)
@@ -558,8 +558,8 @@ def build_support_page(c: Canvas) -> None:
     y -= 8
 
     for icon, label, value in [
-        ("📩", "Etsy Messages:", "etsy.com/shop/ThePlannersCollective — click 'Message' button"),
-        ("✉️", "Email:", "info@theplannerscollective.com"),
+        ("📩", "Etsy Messages:", "etsy.com/shop/MarigoldBride — click 'Message' button"),
+        ("✉️", "Email:", "hello@marigoldbride.com"),
         ("⭐", "Reviews:", "We'd love a 5-star review if you're enjoying your planner!"),
     ]:
         c.setFont("Helvetica-Bold", 9)
@@ -583,7 +583,7 @@ def build_support_page(c: Canvas) -> None:
         "  ❌  Resell, redistribute, or share the digital files with others\n"
         "  ❌  Use the files to create your own products for sale\n"
         "  ❌  Upload the files to any file-sharing service\n"
-        "  ❌  Remove or alter The Planners Collective branding\n\n"
+        "  ❌  Remove or alter Marigold Bride branding\n\n"
         "Thank you for respecting the work that went into creating this product. "
         "If you'd like to purchase a commercial licence or bundle licence, "
         "please contact us via Etsy."
@@ -604,12 +604,12 @@ def build_support_page(c: Canvas) -> None:
     c.drawString((W - mw) / 2, y - 18, msg)
     c.setFont("Helvetica", 9)
     c.setFillColor(C["rose_gold"])
-    brand = "With love, The Planners Collective"
+    brand = "With love, Marigold Bride"
     bw = c.stringWidth(brand, "Helvetica", 9)
     c.drawString((W - bw) / 2, y - 34, brand)
     c.setFont("Helvetica", 8)
     c.setFillColor(C["mid"])
-    sub = "info@theplannerscollective.com"
+    sub = "hello@marigoldbride.com"
     sw = c.stringWidth(sub, "Helvetica", 8)
     c.drawString((W - sw) / 2, y - 48, sub)
 
@@ -628,7 +628,7 @@ def main() -> None:
     print("Building Customer Guide PDF …")
     c = Canvas(str(path), pagesize=letter)
     c.setTitle("Bold & Balanced Wedding Bible — Customer Guide")
-    c.setAuthor("The Planners Collective")
+    c.setAuthor("Marigold Bride")
 
     global _pg
     _pg = 0

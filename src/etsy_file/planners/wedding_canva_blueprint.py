@@ -163,7 +163,7 @@ def page_footer(c: Canvas) -> None:
     c.setFont("Helvetica", 7)
     c.setFillColor(C["border"])
     c.drawString(X0, Y0 - 10,
-        "© The Planners Collective  ·  For internal use and Canva template development only")
+        "© Marigold Bride  ·  For internal use and Canva template development only")
     c.setStrokeColor(C["border"])
     c.setLineWidth(0.3)
     c.line(X0, Y0 - 2, X1, Y0 - 2)
@@ -443,7 +443,7 @@ def build_layout_rules_page(c: Canvas, pg: int) -> None:
     y -= 18
     for k, v in [
         ("Footer rule:", "0.4pt, Light Pink (#E0C0CC), 0.5 in from bottom edge"),
-        ("Left footer text:", "Bold & Balanced Wedding Bible  ·  The Planners Collective"),
+        ("Left footer text:", "Bold & Balanced Wedding Bible  ·  Marigold Bride"),
         ("Right footer:", "Page number (auto-number in Canva)"),
         ("Footer font:", "Montserrat Regular, 7pt, #E0C0CC"),
     ]:
@@ -745,7 +745,7 @@ def main() -> None:
     print("Building Canva Blueprint PDF …")
     c = Canvas(str(path), pagesize=letter)
     c.setTitle("Bold & Balanced Wedding Bible — Canva Template Blueprint")
-    c.setAuthor("The Planners Collective")
+    c.setAuthor("Marigold Bride")
 
     build_cover_page(c)
     c.showPage()

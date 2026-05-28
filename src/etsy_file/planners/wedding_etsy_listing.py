@@ -207,7 +207,7 @@ def page_footer(c: Canvas) -> None:
     c.setFont("Helvetica", 7)
     c.setFillColor(C["line"])
     c.drawString(X0, Y0 - 14,
-        "Bold & Balanced Wedding Bible  ·  Etsy Listing Copy  ·  The Planners Collective")
+        "Bold & Balanced Wedding Bible  ·  Etsy Listing Copy  ·  Marigold Bride")
     c.setStrokeColor(C["line"])
     c.setLineWidth(0.3)
     c.line(X0, Y0 - 2, X1, Y0 - 2)
@@ -259,7 +259,7 @@ def multiline_text(c: Canvas, text: str, y: float,
 def build_listing_pdf(path: Path) -> None:
     c = Canvas(str(path), pagesize=letter)
     c.setTitle("Bold & Balanced Wedding Bible — Etsy Listing Copy")
-    c.setAuthor("The Planners Collective")
+    c.setAuthor("Marigold Bride")
 
     # ── PAGE 1: TITLE & TAGS ─────────────────────────────────────────
     new_page(c)
@@ -390,7 +390,7 @@ def build_listing_txt(path: Path) -> None:
     lines = [
         "=" * 70,
         "BOLD & BALANCED WEDDING BIBLE — ETSY LISTING COPY",
-        "The Planners Collective",
+        "Marigold Bride",
         "=" * 70,
         "",
         "MAIN LISTING TITLE",

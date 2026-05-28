@@ -70,7 +70,7 @@ def page_footer(c: Canvas) -> None:
     c.setFont("Helvetica", 7)
     c.setFillColor(C["line"])
     c.drawString(X0, Y0 - 14,
-        "Bold & Balanced Wedding Bible  ·  Mini Starter Planner  ·  The Planners Collective")
+        "Bold & Balanced Wedding Bible  ·  Mini Starter Planner  ·  Marigold Bride")
     c.setFont("Helvetica-Bold", 7)
     c.setFillColor(C["hot_pink"])
     upsell = "Get the FULL 9-version bundle at Etsy.com  ·  Search: Bold Balanced Wedding Bible"
@@ -285,7 +285,7 @@ def build_cover(c: Canvas) -> None:
     c.rect(0, 0, W, 0.48 * inch, stroke=0, fill=1)
     c.setFont("Helvetica", 7.5)
     c.setFillColor(white)
-    b = "Compliments of The Planners Collective  ·  etsy.com/shop/ThePlannersCollective"
+    b = "Compliments of Marigold Bride  ·  etsy.com/shop/MarigoldBride"
     bw = c.stringWidth(b, "Helvetica", 7.5)
     c.drawString((W - bw) / 2, 0.16 * inch, b)
 
@@ -607,7 +607,7 @@ def build_upsell_page(c: Canvas) -> None:
 
     c.setFont("Helvetica", 9)
     c.setFillColor(C["mid"])
-    note = "Or visit: etsy.com/shop/ThePlannersCollective"
+    note = "Or visit: etsy.com/shop/MarigoldBride"
     nw = c.stringWidth(note, "Helvetica", 9)
     c.drawString((W - nw) / 2, H * 0.215, note)
 
@@ -630,7 +630,7 @@ def main() -> None:
     print("Building Mini Freebie PDF …")
     c = Canvas(str(path), pagesize=letter)
     c.setTitle("Bold & Balanced Wedding Bible — Mini Starter Planner")
-    c.setAuthor("The Planners Collective")
+    c.setAuthor("Marigold Bride")
 
     global _pg
     _pg = 0
