@@ -209,7 +209,7 @@ def build_cover(c: Canvas) -> None:
     c.rect(0, H - 0.9 * inch, W, 0.9 * inch, stroke=0, fill=1)
     c.setFont("Helvetica-Bold", 9)
     c.setFillColor(white)
-    c.drawCentredString(W / 2, H - 0.38 * inch, "THE PLANNERS COLLECTIVE")
+    c.drawCentredString(W / 2, H - 0.38 * inch, "MARIGOLD BRIDE")
 
     # Title
     c.setFont("Helvetica-Bold", 26)
